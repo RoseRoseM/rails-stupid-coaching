@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+</head>
+
+<body>
+  <div class = "container shadow text-center">
+    <div>
+      <h3> <strong> Your question : </strong> </h3>
+      <p> <%= params[:question] %> </p>
+    </div>
+
+    <div>
+      <h3> <strong> The coach's answer : </strong></h3>
+      <p> <%= @answer %> </p>
+    </div>
+
+    <p><%= link_to 'New question', ask_path %></p>
+  </div>
+</body>
+</html>
+
+
